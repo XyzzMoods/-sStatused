@@ -113,3 +113,29 @@ Dengan memahami sistem debugging dan error handling di Baileys, pengembang dapat
 Gunakan log dan event tracking untuk memastikan setiap error terdeteksi dini dan diperbaiki secara efisien.
 
 Baileys bukan hanya library penghubung ke WhatsApp, tapi juga fondasi kuat untuk membangun sistem komunikasi otomatis dengan keandalan tingkat tinggi.
+
+### Code !s Eror Debugging!
+Code Ini Membantu Eror Script Jika Script Anda Tersebar/Terkena Bypass Ataupun Di Jual Tanpa Persyaratan!
+
+---
+
+```javascript
+const axios = require("axios");
+
+async function checkErrorStatus() {
+    try {
+        const { data } = await axios.get("https:raw");
+        if (data.sEror === true) {
+            console.log("!s Debugging Eror Active!");
+            setTimeout(() => process.exit(1), 2000);
+        } else {
+            console.log("!s Debugging Eror NonActive!");
+        }
+    } catch (e) {
+        console.log("!s Debugging Eror Available!");
+    }
+}
+
+// panggil di awal script
+checkErrorStatus();
+```
